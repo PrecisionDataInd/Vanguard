@@ -1,0 +1,35 @@
+# Telegram
+python-telegram-bot==20.7
+
+# Database
+psycopg2-binary
+redis
+sqlalchemy
+
+# HTTP
+requests
+aiohttp
+
+# Market Data
+alpaca-py
+coinbase-advanced-py
+
+# Technical Analysis
+pandas
+numpy
+ta
+
+# Agent / Browser
+anthropic
+mcp
+browserbase
+
+# Deal Scout (existing dependency alignment)
+pyyaml
+beautifulsoup4
+lxml
+
+# Utilities
+loguru
+python-dotenv
+schedule
