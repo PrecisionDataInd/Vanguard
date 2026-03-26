@@ -287,7 +287,6 @@ def calculate(candidate: Any, pool_config: dict) -> dict:
     signal_type = candidate.signal_type
 
     # Position sizing
-    from investor_bot.analysis.scorer import ScoreResult
     score_val = signal_data.get("_score", 0.65)
     sizing = suggested_position_size(pool, score_val, price)
 

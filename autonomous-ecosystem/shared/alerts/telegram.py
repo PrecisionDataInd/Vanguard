@@ -167,27 +167,26 @@ async def send_deal_alert(deal: dict, approval_id: str) -> int | None:
     url = deal.get("listing_url", "")
 
     text = (
-        f"<b>DEAL — APPROVAL REQUIRED</b>\n\n"
+        f"\U0001f525 <b>DEAL \u2014 APPROVAL REQUIRED</b>\n\n"
         f"<b>{title}</b>\n"
-        f"Source: {marketplace}\n"
-        f"{category}\n"
-        f"Asking: <b>${price:.2f}</b>\n"
-        f"Est. Value: ~${est_value:.2f} ({discount:.0f}% below market)\n"
-        f"Score: <b>{score:.0f}%</b>\n"
+        f"\U0001f3ea Source: {marketplace}  \U0001f4e6 {category}\n"
+        f"\U0001f4b0 Asking: <b>${price:.2f}</b>\n"
+        f"\U0001f4c8 Est. Value: ~${est_value:.2f} ({discount:.0f}% below market)\n"
+        f"\U0001f3af Score: <b>{score:.0f}%</b>\n"
     )
     if boosters:
-        text += f"{boosters}\n"
+        text += f"\u2728 {boosters}\n"
     if flags:
-        text += f"{flags}\n"
+        text += f"\U0001f6a9 {flags}\n"
 
     keyboard = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("BUY IT", callback_data=f"deal_approve:{approval_id}"),
-            InlineKeyboardButton("SKIP", callback_data=f"deal_reject:{approval_id}"),
+            InlineKeyboardButton("\u2705 BUY IT", callback_data=f"deal_approve:{approval_id}"),
+            InlineKeyboardButton("\u274c SKIP", callback_data=f"deal_reject:{approval_id}"),
         ],
         [
-            InlineKeyboardButton("VIEW", url=url) if url else InlineKeyboardButton("VIEW", callback_data="noop"),
-            InlineKeyboardButton("REMIND ME IN 2H", callback_data=f"deal_remind:{approval_id}"),
+            InlineKeyboardButton("\U0001f517 VIEW", url=url) if url else InlineKeyboardButton("\U0001f517 VIEW", callback_data="noop"),
+            InlineKeyboardButton("\u23f8 REMIND ME IN 2H", callback_data=f"deal_remind:{approval_id}"),
         ],
     ])
 
@@ -226,12 +225,12 @@ async def send_trade_alert(
     price = candidate.get("price", 0)
 
     text = (
-        f"<b>TRADE ALERT — {pool_name} POOL</b>\n\n"
+        f"\U0001f4ca <b>TRADE ALERT \u2014 {pool_name} POOL</b>\n\n"
         f"<b>{action} {symbol}</b> ({asset_type})\n"
-        f"Estimated size: ~<b>${notional:.2f}</b>\n"
-        f"Signal: {signal_type}\n"
-        f"Score: <b>{score:.0%}</b> | Conviction: <b>{conviction}</b>\n"
-        f"Rationale: {rationale}\n\n"
+        f"\U0001f4b5 Estimated size: ~<b>${notional:.2f}</b>\n"
+        f"\U0001f4e1 Signal: {signal_type}\n"
+        f"\U0001f3af Score: <b>{score:.0%}</b> | Conviction: <b>{conviction}</b>\n"
+        f"\U0001f4dd Rationale: {rationale}\n\n"
         f"Current price: ${price:.4f}\n"
         f"Suggested entry: market order\n"
     )
@@ -247,12 +246,12 @@ async def send_trade_alert(
 
     keyboard = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("EXECUTE", callback_data=f"trade_approve:{approval_id}"),
-            InlineKeyboardButton("PASS", callback_data=f"trade_reject:{approval_id}"),
+            InlineKeyboardButton("\u2705 EXECUTE", callback_data=f"trade_approve:{approval_id}"),
+            InlineKeyboardButton("\u274c PASS", callback_data=f"trade_reject:{approval_id}"),
         ],
         [
-            InlineKeyboardButton("MORE INFO", callback_data=f"trade_info:{approval_id}"),
-            InlineKeyboardButton("NOTE", callback_data=f"trade_note:{approval_id}"),
+            InlineKeyboardButton("\U0001f4ca MORE INFO", callback_data=f"trade_info:{approval_id}"),
+            InlineKeyboardButton("\u270f\ufe0f NOTE", callback_data=f"trade_note:{approval_id}"),
         ],
     ])
 
