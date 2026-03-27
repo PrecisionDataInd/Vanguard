@@ -1,0 +1,89 @@
+# ============================================================================
+# Asset Watchlists — Universe of assets the screener monitors
+# ============================================================================
+
+stocks_aggressive:
+  - NVDA
+  - AMD
+  - SMCI
+  - ARM
+  - PLTR
+  - CRWD
+  - MSTR
+  - COIN
+  - RKLB
+  - IONQ
+  - TSLA
+  - META
+  - AMZN
+  - GOOGL
+  - MSFT
+  - AAPL
+  - NFLX
+  - SOFI
+  - UPST
+  - AFRM
+  - HOOD
+
+etfs_balanced:
+  - SPY
+  - QQQ
+  - IWM
+  - VTI
+  - VGT
+  - ARKK
+  - ARKG
+  - XLK
+  - XLE
+  - XLF
+  - XLV
+  - XLRE
+  - SOXX
+  - SMH
+
+crypto_aggressive:
+  - BTC-USD
+  - ETH-USD
+  - SOL-USD
+  - AVAX-USD
+  - LINK-USD
+  - UNI-USD
+  - MATIC-USD
+  - ARB-USD
+  - OP-USD
+
+crypto_balanced:
+  - BTC-USD
+  - ETH-USD
+  - SOL-USD
+
+dividend_stocks_steady:
+  - JNJ
+  - PG
+  - KO
+  - PEP
+  - MCD
+  - WMT
+  - CVX
+  - XOM
+  - T
+  - VZ
+  - ABBV
+  - MRK
+  - LLY
+  - ABT
+  - EMR
+  - CAT
+  - ITW
+  - MMM
+
+etfs_steady:
+  - SCHD
+  - VYM
+  - DVY
+  - HDV
+  - VTI
+  - SPY
+  - BND
+  - VIG
+  - DGRO

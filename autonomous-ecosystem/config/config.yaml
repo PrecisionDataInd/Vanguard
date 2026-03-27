@@ -1,0 +1,61 @@
+# ============================================================================
+# Autonomous Ecosystem — Master Config
+# Fill all YOUR_* values before running
+# ============================================================================
+
+mode:
+  deal_scout_phase2_enabled: true
+  investor_bot_enabled: true
+  paper_trading: true  # ALWAYS true — no real trades in this build
+
+api_keys:
+  # Telegram
+  telegram_bot_token: "YOUR_TELEGRAM_BOT_TOKEN"
+  telegram_chat_id: "YOUR_TELEGRAM_CHAT_ID"
+
+  # Alpaca (use Data API key for market data — free)
+  alpaca_api_key: "YOUR_ALPACA_API_KEY"
+  alpaca_secret_key: "YOUR_ALPACA_SECRET_KEY"
+  alpaca_data_url: "https://data.alpaca.markets"
+  alpaca_paper_url: "https://paper-api.alpaca.markets"
+
+  # Coinbase Advanced Trade (for crypto)
+  coinbase_api_key: "YOUR_COINBASE_API_KEY"
+  coinbase_api_secret: "YOUR_COINBASE_API_SECRET"
+
+  # Deal Scout Phase 2 (purchasing)
+  agentcard_mcp_url: "YOUR_AGENTCARD_MCP_URL"
+  agentcard_api_key: "YOUR_AGENTCARD_API_KEY"
+  browserbase_api_key: "YOUR_BROWSERBASE_API_KEY"
+
+  # Anthropic (for OpenClaw agent instructions)
+  anthropic_api_key: "YOUR_ANTHROPIC_API_KEY"
+
+database:
+  postgres_url: "postgresql://postgres:postgres@localhost:5432/ecosystem"
+  redis_url: "redis://localhost:6379/0"
+
+deal_scout:
+  # Points to existing deal-scout/ directory
+  existing_scout_path: "../deal-scout"
+  alert_threshold: 0.60
+  max_purchase_usd: 500
+  max_daily_spend_usd: 1000
+  shipping_buffer_pct: 0.15
+  approval_expiry_hours: 4
+
+investor_bot:
+  total_capital_usd: 10000  # starting paper capital across all pools
+  alert_cooldown_hours: 6   # don't re-alert same symbol within 6 hours
+  max_alerts_per_scan: 3    # max Telegram alerts per scan cycle
+  approval_expiry_hours: 4
+
+shipping_address:
+  name: "YOUR FULL NAME"
+  address1: "YOUR ADDRESS"
+  address2: ""
+  city: "YOUR CITY"
+  state: "MA"
+  zip: "YOUR ZIP"
+  country: "US"
+  phone: "YOUR PHONE"

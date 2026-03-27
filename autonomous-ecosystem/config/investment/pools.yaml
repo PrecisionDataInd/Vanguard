@@ -1,0 +1,54 @@
+# ============================================================================
+# Investment Pool Definitions
+# ============================================================================
+
+pools:
+  aggressive:
+    name: "Aggressive Growth"
+    description: "High-conviction momentum and breakout plays"
+    allocation_pct: 40
+    markets: [stocks, crypto]
+    scan_interval_minutes: 15
+    signal_types:
+      - momentum_breakout
+      - post_earnings_gap
+      - crypto_rotation
+      - short_squeeze_setup
+      - sector_rotation_leader
+    min_score_to_alert: 0.65
+    max_position_pct: 15
+    time_horizon: "weeks to months"
+    risk_tolerance: high
+
+  balanced:
+    name: "Balanced Opportunity"
+    description: "Value + momentum blend across asset classes"
+    allocation_pct: 35
+    markets: [stocks, etfs, crypto]
+    scan_interval_minutes: 120
+    signal_types:
+      - value_gap
+      - etf_nav_discount
+      - mean_reversion_setup
+      - dividend_yield_spike
+      - crypto_oversold_quality
+    min_score_to_alert: 0.62
+    max_position_pct: 10
+    time_horizon: "months to 1-2 years"
+    risk_tolerance: medium
+
+  steady:
+    name: "Slow and Steady"
+    description: "10-year compounding — dividend growth and index dips"
+    allocation_pct: 25
+    markets: [etfs, dividend_stocks]
+    scan_interval_minutes: 1440  # once per day
+    signal_types:
+      - dividend_aristocrat_dip
+      - index_etf_pullback
+      - dividend_growth_value
+      - sector_etf_oversold
+    min_score_to_alert: 0.60
+    max_position_pct: 8
+    time_horizon: "5-10 years"
+    risk_tolerance: low
