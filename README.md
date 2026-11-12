@@ -8,7 +8,7 @@ road ahead.
 
 ## Try it
 
-1. Run `Vanguard-Setup-0.2.0.exe`. Windows will warn that the publisher is
+1. Run `Vanguard-Setup-0.2.1.exe`. Windows will warn that the publisher is
    unknown (the installer is unsigned): choose **More info**, then **Run anyway**.
 2. The app opens in **demo mode** with sample listings and made-up prices, so
    every button can be tried with no accounts.

@@ -44,7 +44,7 @@ bot. It had never run. The review found:
 
 ## Milestones
 
-### M1: desktop app (done in v0.2.0)
+### M1: desktop app (done in v0.2.x)
 
 - Electron app, single Windows installer, data in one local file, API keys
   encrypted with Windows credential protection.
@@ -93,11 +93,12 @@ bot. It had never run. The review found:
 - Live trading stays out of scope. Paper results would need a long, honest
   record first, and that would be a separate decision.
 
-## Known gaps in v0.2.0
+## Known gaps in v0.2.1
 
 - The two live deal sources and both price feeds could not be reached from the
   build machine, so they are verified only against documented response shapes.
 - The installer is unsigned; Windows SmartScreen will warn on first run.
-- The installed program shows the default Electron icon on the taskbar; the
-  shortcuts and installer use the Vanguard icon. A build on Windows fixes it.
+- The program file itself (`Vanguard.exe` in Explorer) keeps the default
+  Electron icon when built on Linux; the window, taskbar, shortcuts and
+  installer use the Vanguard crest. A build on Windows fixes the file icon.
 - The old Python build is kept in `legacy/` for reference and is not used.

@@ -35,6 +35,7 @@ function createWindow() {
     minHeight: 640,
     backgroundColor: '#0e1512',
     title: 'Vanguard',
+    icon: app.isPackaged ? path.join(process.resourcesPath, 'icon.ico') : path.join(__dirname, 'build', 'icon.ico'),
     autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),

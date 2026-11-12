@@ -1,7 +1,7 @@
 {
   "name": "vanguard",
   "productName": "Vanguard",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Finds undervalued assets and market setups, then waits for your decision.",
   "author": "Precision Data Industries",
   "license": "UNLICENSED",
@@ -22,10 +22,38 @@
   "build": {
     "appId": "com.precisiondata.vanguard",
     "productName": "Vanguard",
-    "directories": { "output": "dist", "buildResources": "build" },
-    "files": ["main.js", "preload.js", "src/**/*", "renderer/**/*", "package.json"],
-    "extraResources": [{ "from": "knowledge", "to": "knowledge" }],
-    "win": { "target": [{ "target": "nsis", "arch": ["x64"] }], "icon": "build/icon.ico" },
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "renderer/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "knowledge",
+        "to": "knowledge"
+      },
+      {
+        "from": "build/icon.ico",
+        "to": "icon.ico"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
     "nsis": {
       "oneClick": false,
       "perMachine": false,
