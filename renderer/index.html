@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self'; script-src 'self'">
+<title>Vanguard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<aside class="side">
+  <div class="brand">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6l12 22L28 6h-5.2L16 19 9.2 6z" fill="currentColor"/><circle cx="16" cy="7" r="2.6" fill="currentColor"/></svg>
+    <div><b>VANGUARD</b><span>finds it &middot; you decide</span></div>
+  </div>
+  <nav id="nav"></nav>
+  <div class="side-foot">
+    <div id="mode"></div>
+    <div id="status"></div>
+  </div>
+</aside>
+<main>
+  <header class="top">
+    <div><h1 id="title"></h1><p id="subtitle"></p></div>
+    <div class="top-actions" id="actions"></div>
+  </header>
+  <section id="view"></section>
+</main>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Knowledge file: edit freely. The app re-reads it on every start.
+category: test_equipment
+display_name: Test & Measurement
+sources: [ebay, shopgoodwill]
+fee_pct: 0.13        # share of the resale price lost to selling fees
+ship_est: 28         # typical shipping cost for one item, each way
+price_floor: 25
+price_ceiling: 5000
+search_terms: [tektronix oscilloscope, keysight oscilloscope, agilent spectrum analyzer, fluke multimeter, rohde schwarz, hp signal generator, network analyzer, bench power supply, logic analyzer, lcr meter]
+brand_tiers:
+  tier_1: [rohde schwarz, agilent, keysight, anritsu, tektronix, hewlett packard]
+  tier_2: [fluke, lecroy, yokogawa, wavetek, boonton, bird]
+  tier_3: [bk precision, rigol, siglent, instek]
+value_boosters: [tested working, powers on, calibrated, cal sticker, with probes, with manual, self test passes, gpib]
+red_flags:
+  critical: [for parts only, parts or repair, front panel only, manual only, empty case]
+  major: [for parts, no power, does not power, display issue, screen damage, error codes, needs repair, as-is, as is, untested, missing knobs]
+  minor: [no probes, no accessories, cosmetic damage, scratches]

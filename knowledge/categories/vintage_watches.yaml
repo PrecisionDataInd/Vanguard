@@ -1,0 +1,17 @@
+category: vintage_watches
+display_name: Vintage Watches
+sources: [ebay, shopgoodwill]
+fee_pct: 0.15
+ship_est: 10
+price_floor: 60
+price_ceiling: 6000
+search_terms: [vintage omega automatic, vintage longines, vintage tudor, vintage seiko automatic, vintage hamilton, universal geneve, vintage heuer, vintage zenith, jaeger lecoultre vintage, vintage bulova accutron]
+brand_tiers:
+  tier_1: [patek philippe, audemars piguet, vacheron constantin, rolex]
+  tier_2: [omega, iwc, jaeger-lecoultre, jaeger lecoultre, zenith, cartier, longines, tudor, heuer, universal geneve]
+  tier_3: [seiko, hamilton, bulova, elgin, waltham, gruen, wittnauer, movado, tissot, enicar, doxa]
+value_boosters: [original dial, all original, box and papers, service papers, serviced, running, tropical dial, gilt dial, chronograph, military]
+red_flags:
+  critical: [replica, homage, fashion watch, style watch, inspired, dial only, band only, strap only, case only, movement only]
+  major: [for parts, not running, redial, refinished dial, repainted, franken, replacement dial, cracked crystal, missing crown, water damage]
+  minor: [no box, no papers, needs service, running slow, running fast]

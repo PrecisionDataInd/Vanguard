@@ -1,0 +1,17 @@
+category: heavy_equipment
+display_name: Heavy Equipment
+sources: [ebay]
+fee_pct: 0.08
+ship_est: 900        # freight; most of these are local pickup in practice
+price_floor: 1500
+price_ceiling: 60000
+search_terms: [skid steer, mini excavator, compact tractor, forklift, scissor lift, diesel generator, boom lift, backhoe]
+brand_tiers:
+  tier_1: [caterpillar, john deere, komatsu, kubota]
+  tier_2: [bobcat, case, new holland, jcb, genie, jlg, toyota]
+  tier_3: [yanmar, takeuchi, gehl, vermeer]
+value_boosters: [low hours, runs drives, runs and drives, clean title, fleet maintained, recent service, enclosed cab]
+red_flags:
+  critical: [salvage title, no title, fire damage, flood damage, seized engine, toy, diecast, model 1/50, manual only, decal]
+  major: [not running, needs engine, hydraulic leak, blown, major repair, for parts, high hours]
+  minor: [cosmetic damage, needs service, minor leak, surface rust]

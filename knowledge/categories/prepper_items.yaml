@@ -1,0 +1,17 @@
+category: prepper_items
+display_name: Preparedness Gear
+sources: [ebay, shopgoodwill]
+fee_pct: 0.13
+ship_est: 18
+price_floor: 30
+price_ceiling: 5000
+search_terms: [berkey water filter, freeze dried food bucket, mountain house case, portable power station, honda generator eu2200i, ham radio transceiver, yaesu, icom, solar panel 100w, katadyn]
+brand_tiers:
+  tier_1: [honda, yaesu, icom, kenwood, berkey, katadyn]
+  tier_2: [mountain house, augason farms, goal zero, ecoflow, jackery, bluetti, renogy]
+  tier_3: [baofeng, champion, westinghouse]
+value_boosters: [sealed, unopened, never used, complete kit, with battery, long shelf life, new in box]
+red_flags:
+  critical: [expired, bloated, damaged cans, empty box, box only, manual only, demilled]
+  major: [not working, needs repair, corroded, for parts, untested, as-is, as is, opened]
+  minor: [no case, missing accessories, cosmetic wear, dented]

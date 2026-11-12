@@ -1,0 +1,14 @@
+category: fine_art
+display_name: Fine Art & Prints
+sources: [ebay, shopgoodwill]
+fee_pct: 0.15
+ship_est: 30
+price_floor: 50
+price_ceiling: 8000
+search_terms: [signed numbered lithograph, original oil painting signed, artist proof signed, serigraph signed numbered, signed etching, bronze sculpture signed, original watercolor signed, listed artist painting]
+brand_tiers: {}
+value_boosters: [signed and numbered, artist proof, certificate of authenticity, gallery label, provenance, listed artist, exhibition label, period frame]
+red_flags:
+  critical: [reproduction, giclee reproduction, canvas print, poster print, offset print, in the style of, after the artist, unsigned]
+  major: [torn, water damage, foxing, damaged, as-is, as is, attributed to]
+  minor: [needs cleaning, no frame, minor foxing, frame wear]

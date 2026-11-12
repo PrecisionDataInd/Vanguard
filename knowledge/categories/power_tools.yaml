@@ -1,0 +1,17 @@
+category: power_tools
+display_name: Power Tools
+sources: [ebay, shopgoodwill]
+fee_pct: 0.13
+ship_est: 22
+price_floor: 30
+price_ceiling: 4000
+search_terms: [festool, hilti, milwaukee m18 fuel, snap-on, makita 18v, mafell, fein multimaster, powermatic, festool domino, track saw]
+brand_tiers:
+  tier_1: [festool, snap-on, hilti, fein, mafell, lie-nielsen]
+  tier_2: [milwaukee, makita, bosch, metabo, powermatic, jet]
+  tier_3: [dewalt, ridgid, porter cable, delta, craftsman]
+value_boosters: [systainer, made in usa, made in germany, made in japan, with batteries, with charger, brushless, original case, complete set]
+red_flags:
+  critical: [fire damage, flood damage, case only, battery only, charger only, manual only]
+  major: [for parts, not working, needs repair, broken, cracked housing, no battery, no batteries, tool only untested]
+  minor: [surface rust, needs cleaning, no case, cosmetic wear]

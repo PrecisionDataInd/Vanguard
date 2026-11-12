@@ -1,0 +1,38 @@
+{
+  "name": "vanguard",
+  "productName": "Vanguard",
+  "version": "0.2.0",
+  "description": "Finds undervalued assets and market setups, then waits for your decision.",
+  "author": "Precision Data Industries",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node test/run.js",
+    "dist": "electron-builder --win nsis --x64 --publish never"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.precisiondata.vanguard",
+    "productName": "Vanguard",
+    "directories": { "output": "dist", "buildResources": "build" },
+    "files": ["main.js", "preload.js", "src/**/*", "renderer/**/*", "package.json"],
+    "extraResources": [{ "from": "knowledge", "to": "knowledge" }],
+    "win": { "target": [{ "target": "nsis", "arch": ["x64"] }], "icon": "build/icon.ico" },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "Vanguard",
+      "artifactName": "Vanguard-Setup-${version}.${ext}"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+# The three paper-money pools. Signals run on daily prices, so scanning more
+# often than hourly adds nothing.
+#   allocation        share of starting capital
+#   risk_pct          share of the pool put at risk per idea (entry to stop)
+#   max_position_pct  cap on any one holding
+pools:
+  aggressive:
+    name: Aggressive Growth
+    horizon: weeks to months
+    allocation: 0.40
+    scan_minutes: 60
+    risk_pct: 0.015
+    max_position_pct: 0.15
+    min_score: 0.60
+    signals: [momentum_breakout, oversold_reversion]
+    watch:
+      stocks: [NVDA, AMD, PLTR, CRWD, TSLA, META, AMZN, GOOGL, MSFT, AAPL, NFLX, COIN]
+      crypto: [BTC-USD, ETH-USD, SOL-USD, AVAX-USD, LINK-USD]
+  balanced:
+    name: Balanced Opportunity
+    horizon: months to two years
+    allocation: 0.35
+    scan_minutes: 240
+    risk_pct: 0.01
+    max_position_pct: 0.10
+    min_score: 0.60
+    signals: [oversold_reversion, uptrend_pullback]
+    watch:
+      stocks: [SPY, QQQ, IWM, VTI, XLK, XLE, XLF, XLV, SMH]
+      crypto: [BTC-USD, ETH-USD]
+  steady:
+    name: Slow and Steady
+    horizon: five to ten years
+    allocation: 0.25
+    scan_minutes: 1440
+    risk_pct: 0.0075
+    max_position_pct: 0.08
+    min_score: 0.55
+    signals: [uptrend_pullback, quality_drawdown]
+    watch:
+      stocks: [SCHD, VYM, VIG, DGRO, VTI, SPY, JNJ, PG, KO, PEP, MCD, WMT, CVX, XOM, ABBV, MRK]
+      crypto: []

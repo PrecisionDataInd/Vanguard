@@ -1,0 +1,17 @@
+category: medical_lab_equipment
+display_name: Medical & Lab Equipment
+sources: [ebay]
+fee_pct: 0.13
+ship_est: 250       # mostly freight
+price_floor: 100
+price_ceiling: 15000
+search_terms: [ultra low freezer -80, biosafety cabinet class ii, co2 incubator, autoclave sterilizer, laminar flow hood, refrigerated centrifuge, patient monitor, tuttnauer autoclave]
+brand_tiers:
+  tier_1: [thermo, forma, revco, nuaire, baker, labconco, getinge, steris]
+  tier_2: [philips, ge healthcare, mindray, welch allyn, stryker, hill-rom]
+  tier_3: [tuttnauer, ritter, midmark, pelton crane]
+value_boosters: [working condition, recently serviced, low hours, hospital decommission, class ii type a2, hepa certified, tested]
+red_flags:
+  critical: [biohazard, contaminated, radiation, no compressor, for parts only, manual only]
+  major: [not cooling, not working, compressor failure, blower failure, for parts, untested, as-is, as is]
+  minor: [needs certification, cosmetic damage, no accessories]

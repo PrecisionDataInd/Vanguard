@@ -1,0 +1,17 @@
+category: scientific_devices
+display_name: Scientific Instruments
+sources: [ebay, shopgoodwill]
+fee_pct: 0.13
+ship_est: 40
+price_floor: 60
+price_ceiling: 8000
+search_terms: [zeiss microscope, nikon microscope, leica microscope, olympus microscope, analytical balance, spectrophotometer, pcr thermal cycler, eppendorf centrifuge, mettler toledo balance, hplc]
+brand_tiers:
+  tier_1: [zeiss, leica, nikon, olympus, perkinelmer, waters, agilent, thermo scientific, bruker]
+  tier_2: [shimadzu, beckman, eppendorf, mettler toledo, sartorius, bio-rad]
+  tier_3: [hach, cole parmer, ohaus, fisher scientific]
+value_boosters: [powers on, working condition, self test passes, university surplus, with software, complete system, calibrated, with objectives]
+red_flags:
+  critical: [biohazard, radioactive, contaminated, for parts only, manual only, objective only, eyepiece only]
+  major: [for parts, not working, needs repair, incomplete, missing components, untested, as-is, as is]
+  minor: [no software, needs cleaning, cosmetic wear]
